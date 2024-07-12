@@ -1,0 +1,231 @@
+.responsiveBox {
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgroundlight-secondcontainer);
+    border-radius: 18px 40px 40px 17px;
+    position: relative;
+    left: -14px;
+  }
+  
+  .mainContainer {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 17px;
+    height: 5%;
+  }
+  
+  .searchContainer {
+    width: 190px !important;
+    background: white;
+    opacity: 0.9;
+    padding: 1px 8px !important;
+    border-radius: 20px;
+    display: flex !important;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  
+  .searchInput {
+    background-color: transparent;
+    border: 0px;
+    outline: 0px;
+    width: 100%;
+    font-family: Poppins;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .infoContainer {
+    height: 30%;
+    margin-top: 8px;
+    min-height: fit-content !important;
+  }
+  
+  .innerContainer {
+    width: 100%;
+    background-color: #fffdfdb0;
+    height: 100%;
+    border-radius: 7px;
+    padding: 5px !important;
+    display: flex !important;
+    flex-direction: column;
+    min-height: fit-content !important;
+  }
+  
+  .highlightTitle {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    box-sizing: border-box;
+    margin-bottom:10px !important;
+  }
+  
+  .highlightContent {
+    display: flex !important;
+    padding: 0px !important;
+    height: 55%;
+  }
+  
+  .highlightContainer {
+    width: 60% !important;
+    padding: 5px;
+    padding-right: 0px !important;
+    display: flex !important;
+    flex-direction: column;
+  }
+  
+  .forecastContainer {
+    width: 40% !important;
+    padding: 5px !important;
+    padding-left: 0px !important;
+    height: 100% !important;
+    border-radius: 7px;
+  }
+  
+  .boxContainer {
+    display: flex !important;
+    flex-direction: column;
+    background: #fffdfdb0;
+    border-radius: 7px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .scrollContainer {
+    padding: 3px !important;
+    height: 90% !important;
+    background-color: #f5f8fe;
+    border-radius:8px;
+  }
+  
+  .boxTitle {
+    font-size: 15px !important;
+    font-family: Poppins !important;
+    font-weight: 400 !important;
+  }
+  
+  .iconsBox {
+    color: white;
+  }
+  
+  .secondContent {
+    display: flex !important;
+    flex-direction: column;
+    font-size: 10px !important;
+    font-family: Poppins !important;
+    font-weight: 300 !important;
+    color: grey;
+  }
+  
+  .windContent {
+    display: flex !important;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+  }
+  
+  .windSubContent {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width:1190px) {
+
+    .responsiveBox{
+        width:94% !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+       top:-28px !important;
+        border-radius: 40px 40px 40px 40px !important;
+        left:0px !important;
+        /* height:70% !important; */
+        max-height: 80%;
+        padding-bottom:10px;
+      }
+
+      .highlightContainer{
+        width:100% !important;
+        margin-left: 0px !important;
+        margin-right:0px !important;
+      }
+
+      .forecastContainer {
+        width:100% !important;
+        padding-left: 20px !important;
+      }
+
+      .highlightContent{
+        flex-direction:column !important;
+        overflow-y: scroll;
+        margin-top:20px !important;
+        width:98% !important;
+        margin-bottom:10px !important;
+      }
+
+      .highlightContent::-webkit-scrollbar {
+        display: flex;
+        margin-top: 4px;
+        width: 4px;
+      }
+      
+      .highlightContent::-webkit-scrollbar-thumb {
+        background-color: rgb(165, 165, 165);
+        border-radius: 5px;
+      }
+      
+      .highlightContent::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 5px;
+      }
+    
+      .mainContainer{
+        max-width:100% !important;
+        margin-left:0px !important;
+        margin-right:0px !important;
+        height: fit-content;
+        flex-direction: column-reverse;
+      }
+    .searchContainer{
+        margin-left:auto !important ;
+        margin-right:0px !important;
+      }
+      .weatherforecastsection{
+        margin-left:0px !important ;
+        margin-right:auto !important;
+      }
+
+      .recharts-text{
+        font-family:"Poppins";
+        font-weight: 300;
+        font-size:20px;
+      }
+  }
+
+  @media screen and (max-width:750px) {
+    
+      .boxTitle{
+        font-size:13px !important;
+      }
+    
+      .windheading{
+        font-size:10px !important;
+      }
+  }
+
+  @media screen and (max-height:1000px) and (max-width:850px) {
+    .forecastContainer{
+        height:45% !important;
+      }
+    .scrollContainer{
+        height:80% !important;
+      }
+    .responsiveBox{
+        border-radius: 40px 40px 0px 0px !important;
+
+    }
+  }
+  

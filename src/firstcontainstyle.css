@@ -1,0 +1,109 @@
+.box {
+    width: 40%;
+    height: 100%;
+    border-radius: 40px 0px 0px 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column;
+  }
+  .container-1 {
+    height: 5%;
+  }
+  .container-2 {
+    margin-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+  }
+
+  .container-3 {
+    display: flex !important;
+    align-items: center;
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+    margin-bottom: 10px;
+  }
+  
+  /* Flex container with gap and relative position */
+  .container-4 {
+    display: flex !important;
+    gap: 6px;
+    align-items: center;
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+    position: relative !important;
+    left: -5px !important;
+  }
+  
+  /* Flex container for lat and lon */
+  .container-5 {
+    display: flex !important;
+    gap: 6px;
+    align-items: center;
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+    justify-content: end;
+  }
+  
+  /* Centered date typography */
+  .container-6 {
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .container-7 {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+  }
+
+  .container-8 {
+    display: flex !important;
+    gap: 5px;
+    justify-content: center;
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+  }
+
+  .container-9 {
+    display: flex !important;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+  }
+
+  .container-10 {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-left: 10px !important;
+    padding-right: 20px !important;
+    text-align: center;
+  }
+  
+  .typography-1 {
+    font-size: 16px;
+    color: white;
+    font-family: Poppins;
+    font-weight: 400;
+    text-wrap: nowrap;
+  }
+  
+
+  @media screen and (max-width:750px) {
+    .typography-1 {
+        font-size:20px ;
+    }
+    
+  }
